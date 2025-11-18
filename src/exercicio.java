@@ -10,16 +10,22 @@ public class exercicio {
             System.out.println("opção 2 = sair");
             System.out.println("Digite 1 ou 2");
             resposta = sc.nextInt();
-        }while(resposta != 2 && resposta != 1);
-        if (resposta == 1){
             sc.nextLine();
-            System.out.println("Digite uma frase \n");
-            String frase = sc.nextLine();
-            System.out.println();
-            System.out.println(frase);
-        }else if (resposta == 2){
-            System.out.println("Obrigado por utilizar o nosso sistema, espero que tenha gostado");
-        }
+            if (resposta == 1) {
+
+                System.out.println("Digite uma frase \n");
+                String frase = sc.nextLine();
+                System.out.println();
+                System.out.println(frase);
+            } else if (resposta == 2) {
+                System.out.println("Obrigado por utilizar o nosso sistema, espero que tenha gostado");
+            } else {
+                System.out.println("Resposta Invalida!, tente novamente \n");
+            }
+
+        } while (resposta != 2);
+
+        sc.close();
     }
     
     public static void tabuada (){

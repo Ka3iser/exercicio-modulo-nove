@@ -15,6 +15,7 @@ public class exercicio {
             sc.nextLine();
             System.out.println("Digite uma frase \n");
             String frase = sc.nextLine();
+            System.out.println();
             System.out.println(frase);
         }else if (resposta == 2){
             System.out.println("Obrigado por utilizar o nosso sistema, espero que tenha gostado");
